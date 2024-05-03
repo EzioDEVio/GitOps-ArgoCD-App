@@ -4,40 +4,53 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-  <title>Welcome to GitOps</title>
+  <title>Welcome to GitOps with ArgoCD</title>
   <style>
     body {
-      background-color: #e9ecef;
-      font-family: Arial, sans-serif;
+      background-color: #f8f9fa; /* Lighter background */
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
     .hero-section {
       background-color: #ffffff;
       border-radius: 10px;
       padding: 40px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-      margin-top: 50px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+      margin-top: 100px; /* More top margin for focus */
+      border: 1px solid #dee2e6; /* Subtle border */
     }
     .argo-logo {
-      width: 200px; /* Adjusted size */
+      width: 180px;
       height: auto;
-      margin-bottom: 30px;
+      margin-bottom: 20px;
     }
     .header-color {
-      color: #0056b3; /* Argo CD's brand color for headers */
+      color: #007bff; /* Bootstrap primary color for consistency */
     }
     .text-color {
-      color: #343a40; /* A soft black for text */
+      color: #495057; /* Darker grey for better readability */
+    }
+    .info-box {
+      background-color: #e2e3e5;
+      border-left: 5px solid #007bff;
+      padding: 20px;
+      margin-top: 30px;
+      font-size: 0.9rem;
     }
   </style>
 </head>
 <body>
   <div class="container">
     <div class="row justify-content-center">
-      <div class="col-md-10 text-center hero-section">
-        <!-- Using a locally hosted logo image -->
-        <img src="images/argocd.png" alt="ArgoCD Logo" class="argo-logo">
-        <h1 class="header-color">Welcome to GitOps with ArgoCD Tutorial Latest image from docker hub</h1>
-        <p class="lead text-color">Explore how to set up and manage your Kubernetes applications seamlessly with ArgoCD.</p>
+      <div class="col-md-8 text-center hero-section">
+        <img src="images/argocd_logo.svg" alt="ArgoCD Logo" class="argo-logo">
+        <h1 class="header-color">Welcome to GitOps with ArgoCD</h1>
+        <p class="lead text-color">Learn how to seamlessly manage your Kubernetes applications with ArgoCD and GitOps methodologies.</p>
+        <div class="info-box">
+          <h4 class="header-color">Why GitOps?</h4>
+          <p>GitOps is a paradigm that takes DevOps best practices used for application development, such as version control, collaboration, compliance, and CI/CD, and applies them to infrastructure automation.</p>
+          <h4 class="header-color">How Does ArgoCD Help?</h4>
+          <p>ArgoCD is a declarative, GitOps continuous delivery tool for Kubernetes. It automates the deployment of the desired application states in the specified target environments. Changes made through Git directly affect the deployment environments.</p>
+        </div>
       </div>
     </div>
   </div>
