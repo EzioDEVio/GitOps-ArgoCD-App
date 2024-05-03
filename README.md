@@ -1,4 +1,4 @@
-
+[![Build and Push Docker image](https://github.com/EzioDEVio/GitOps-ArgoCD-App/actions/workflows/build.yml/badge.svg)](https://github.com/EzioDEVio/GitOps-ArgoCD-App/actions/workflows/build.yml)
 # Node.js Application Deployment with ArgoCD and GitOps 🚀
 
 This repository contains the source code and Kubernetes deployment configurations for a simple Node.js application. This project demonstrates a GitOps workflow using ArgoCD to manage deployments automatically in a Kubernetes cluster.
