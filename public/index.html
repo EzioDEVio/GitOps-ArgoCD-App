@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,7 +8,7 @@
   <title>Welcome to GitOps with ArgoCD</title>
   <style>
     body {
-      background-color: #f8f9fa; /* Lighter background */
+      background-color: #f8f9fa;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
     .hero-section {
@@ -15,19 +16,19 @@
       border-radius: 10px;
       padding: 40px;
       box-shadow: 0 8px 16px rgba(0,0,0,0.1);
-      margin-top: 100px; /* More top margin for focus */
-      border: 1px solid #dee2e6; /* Subtle border */
+      margin-top: 100px;
+      border: 1px solid #dee2e6;
     }
     .argo-logo {
-      width: 180px;
+      width: 180px; /* Adjust size as necessary */
       height: auto;
       margin-bottom: 20px;
     }
     .header-color {
-      color: #007bff; /* Bootstrap primary color for consistency */
+      color: #007bff;
     }
     .text-color {
-      color: #495057; /* Darker grey for better readability */
+      color: #495057;
     }
     .info-box {
       background-color: #e2e3e5;
@@ -42,7 +43,7 @@
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-md-8 text-center hero-section">
-        <img src="images/argocd.png" alt="ArgoCD Logo" class="argo-logo">
+        <img src="images/argocd.png" alt="ArgoCD Logo" class="argo-logo" onerror="this.onerror=null; this.src='images/default-logo.png'; alert('Failed to load the specified image!');">
         <h1 class="header-color">Welcome to GitOps with ArgoCD</h1>
         <p class="lead text-color">Learn how to seamlessly manage your Kubernetes applications with ArgoCD and GitOps methodologies.</p>
         <div class="info-box">
