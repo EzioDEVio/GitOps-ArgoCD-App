@@ -1,10 +1,9 @@
-
-name: Build and Push Docker image
+name: Build, Push, and SonarQube Analysis
 
 on:
   push:
     branches:
-      - main  # Set this to the branch you use for production releases
+      - main
 
 jobs:
   build-and-push:
@@ -28,5 +27,17 @@ jobs:
         context: .
         file: ./Dockerfile
         push: true
-        tags: ezio22/argocd-node-app:latest  # Replace with your Docker Hub repo and appropriate tag
+        tags: ezio22/argocd-node-app:latest
 
+  sonarqube-analysis:
+    runs-on: ubuntu-latest
+    needs: build-and-push  # Ensure SonarQube analysis runs after the Docker push
+    steps:
+    - name: Check Out Repo
+      uses: actions/checkout@v2
+
+    - name: SonarQube Scan
+      uses: SonarSource/sonarcloud-github-action@v1.6
+      with:
+        host-url: ${{ secrets.SONAR_HOST_URL }}
+        login: ${{ secrets.SONAR_TOKEN }}
