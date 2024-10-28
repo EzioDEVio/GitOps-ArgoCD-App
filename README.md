@@ -106,3 +106,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **ArgoCD Configuration Details**: This README assumes ArgoCD is already configured and operational within the cluster. If this is not the case, you might need to include setup details or refer to official ArgoCD documentation for initial setup instructions.
 
 This README.md provides a comprehensive guide that not only helps users understand how to get the application running but also how to manage deployments through a GitOps workflow using ArgoCD.
+
+-**The End
